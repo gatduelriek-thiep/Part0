@@ -1,0 +1,6 @@
+flowchart TD
+    A[User] -->|Click Single app under the below URL| B(https://studies.cs.helsinki.fi/exampleapp/spa)
+    B --> C{Once he open the URL type something on text box and click save}
+    C -->|One| D[new note was not created]
+    C -->|Two| E[The request URL change to this https://studies.cs.helsinki.fi/exampleapp/new_note_spa]
+    C -->|Three| F[Status Code become 201 and main.css and spa.js were loaded request method became POST]

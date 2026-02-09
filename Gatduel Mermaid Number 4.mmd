@@ -1,0 +1,17 @@
+graph TD
+    User[User] --> new_note
+    User[User] --> Server
+    subgraph new_note [new_note]
+        direction TB
+        n3[User Open this URL https://studies.cs.helsinki.fi/exampleapp/notes]
+        n2[User Create a new note in the first step URL. He type his note in text box and click on save button]
+        n1[the browser send the user input to the server]
+        
+        
+    end
+    subgraph Server [Server]
+        direction TB
+        s1[If you inspect and go to network tab you will see the respond is 200 and it has get request
+        New_note was create and main.css and main.js are loaded]
+    end
+    
